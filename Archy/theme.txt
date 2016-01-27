@@ -1,1 +1,3 @@
- 
+# "Archy" a theme for GRUB 2.x
+#
+# Copyright (C) 2016 Sandun Wanniarachchi
