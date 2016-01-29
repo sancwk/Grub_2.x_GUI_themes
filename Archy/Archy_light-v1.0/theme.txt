@@ -1,0 +1,3 @@
+# Wanni theme for GRUB2 
+# Archy_light v1.0
+# Copyright (C) 2016 Sandun Wanniarachchi
