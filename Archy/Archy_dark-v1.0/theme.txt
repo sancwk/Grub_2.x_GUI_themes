@@ -1,0 +1,79 @@
+# Wanni theme for GRUB2 
+# Archy_dark v1.0
+# Copyright (C) 2016 Sandun Wanniarachchi
+
+#general settings
+title-text: ""
+title-font: "Sans Regular 12"
+title-color: "#000000"
+message-font: "Fixed Regular 13"
+message-color: "#000"
+message-bg-color: "#fff"
+terminal-font: "Fixed Regular 13"
+terminal-box: "boot_menu_*.png"
+desktop-image: "grub_bg.png"
+
+# Show Archlinux logo
+
++ image {
+		    id = "__archlogo__"
+		    left = 33%
+		    width = 30%
+		    align = "center"
+		    top = 10%
+		    file = "arch_logo.png"
+}
+
+#boot menu
++ boot_menu {
+	left = 25%
+	width = 50%
+	align = "center"
+	top = 35%
+	height = 47%	
+	item_font = "Sans Regular 14"
+	item_color = "#fff"
+	selected_item_font = "Sans Regular 14"
+	selected_item_color= "#1793d1"
+	selected_item_pixmap_style = "arch.png"
+	icon_height = 25
+	icon_width = 25
+	item_height = 26
+	item_padding = 100 
+	item_icon_space = 15 
+	item_spacing = 10
+	scrollbar = true
+	scrollbar_width = 20
+	scrollbar_thumb = "slider_*.png"
+	menu_pixmap_style = "boot_menu_*.png"
+}
+
+#progress bar
++ progress_bar {
+	left = 15%
+	align = "center"
+	top = 10%
+	height = 15
+	width = 70%
+	font = "Sans Regular 12"
+	text_color = "#000"
+	fg_color = "#1793d1"
+	bg_color = "#fff"
+	border_color = "#fff"
+	text = "@TIMEOUT_NOTIFICATION_LONG@"
+}
+
+# Show an informational message.
++ hbox {
+		top = 100%-35
+		left = 30%
+		width = 50%
+		align = "center"
+		+ label {text = "Enter: " font = "Sans 12" color = "#fff" align = "left"}
+		+ label {text = "Boot Selection     " font = "Sans 12" color = "#1793d1" align = "left"}
+		+ label {text = "E: " font = "Sans 12" color = "#fff" align = "left"}
+		+ label {text = "Edit Selection     " font = "Sans 12" color = "#1793d1" align = "left"}
+		+ label {text = "C: " font = "Sans 12" color = "#fff" align = "left"}
+		+ label {text = "GRUB Commandline" font = "Sans 12" color = "#1793d1" align = "left"}
+}
+
